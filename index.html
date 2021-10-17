@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 8_dz</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="top"></div>
+		<header class="header">
+			<h1>Урок 8<br>Псевдоклассы и псевдоэлементы</h1>
+		</header>
+		<main class="main">
+			<div class="block">
+				<div class="text">Псевдоклассы состояния <br> :Hover <br> Срабатывает при наведении на элемент,
+					часто применяется как для ссылок так
+					и для любого другого элемента.</div>
+				<div class="text2">
+					<div class="textcont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quae magni
+						facilis aliquid magnam ducimus et vero totam, id a officiis sint error temporibus sapiente nisi rem
+						aliquam ab culpa!</div>
+				</div>
+				<a href="https://www.yandex.ru" class="link">:visited <br> Срабатывает для посещенных ссылок</a>
+				<a href="#" class="link2">:active <br> Срабатывает при нажатии на элемент.
+					В основном применяется к ссылкам и кнопкам.</a>
+				<a href="#" class="link3">:focus <br> Срабатывает при получении элементом фокуса.
+					Часто применяется к елементам форм. Например инпутам.</a>
+				<a href="#content" class="link4">Просмотреть содержание</a>
+				<div id="content" class="content">:target <br>
+					Срабатывает когда элемент является объектом
+					на который ссылаются</div>
+				<div class="lorem">
+					<p>1 Псевдоклассы положения в коде <br> :first-child <br>
+						Обращение к первому элементу в блоке</p>
+					<p>2 :nth-child(порядковый номер элемента) <br>
+						Обращение к конкретным элементам в блоке</p>
+					<p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur iusto illum voluptas
+						nesciunt officiis, exercitationem veniam quas possimus sequi similique alias accusamus commodi enim
+						cupiditate! Tenetur culpa dolorum repellendus.</p>
+					<p>4 *:not(:last-child) для любых объектов внутри объектов с классом...,но кроме последнего объекта
+					</p>
+				</div>
+				<div class="lorem2">
+					<h2>ашдва<br>*:first-child <br>Любой оъект который первый внутри родителя</h2>
+					<span>Я спан</span>
+					<p>1 :first-of-type <br>Первый в блоке тег P, даже если выше
+						него есть другие теги</p>
+					<p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic architecto, sunt, dolore aliquid
+						voluptates aperiam culpa, adipisci voluptatum quasi excepturi. Quisquam aliquid pariatur doloremque
+						nostrum vero at provident reiciendis!</p>
+					<p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, vitae fugiat, culpa modi
+						dolorum
+						sed soluta, fugit quisquam perspiciatis laudantium illo assumenda repellat molestiae minima deleniti
+						eaque voluptatibus ratione? Voluptatum.</p>
+					<p>4 :last-of-type <br>Последний тэг р,даже если ниже есть другие элементы</p>
+					<span>*:last-child <br> Я спан</span>
+				</div>
+				<div class="lorem3">
+					<p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum debitis qui aperiam sit in
+						repudiandae nesciunt, tempore placeat, magnam cupiditate architecto perferendis quas id accusamus amet
+						quam ea officiis.</p>
+					<p>2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt fuga accusantium repudiandae
+						obcaecati minima assumenda quo repellat, aliquam molestias iusto vel corporis laudantium non
+						aspernatur cum, voluptate neque, tempora sint?</p>
+					<p>3 :last-child<br>Обращение к последнему элементу в блоке</p>
+				</div>
+				<div class="lorem4">
+					<p>1 p:nth-child(odd)<br>odd - нечетные </p>
+					<p>2 p:nth-child(even)<br>even - четные</p>
+					<p>3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut impedit, officia quos expedita laborum
+						suscipit, perferendis porro, quod nesciunt quisquam perspiciatis ipsum at! Nostrum doloremque
+						cupiditate mollitia magnam vero rem.</p>
+					<p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut aut soluta consequatur labore
+						voluptate totam iste explicabo, sequi quaerat, facere quam alias est cupiditate voluptatum temporibus
+						quidem sapiente voluptates.</p>
+				</div>
+				<div class="firstline">
+					Псевдоэлемент ::first-line <br> Задает стиль первой
+					строки форматированного текста.
+					Длина этой строки зависит от многих факторов,
+					таких как используемый шрифт,
+					размер окна браузера, ширина блока, языка и т.д.
+					В правилах стиля допустимо
+					использовать только свойства, относящиеся к шрифту,
+					изменению цвета текста и фона.
+				</div>
+				<div class="firstletter">
+					Псевдоэлемент ::first-letter <br>Определяет стиль первого
+					символа в тексте элемента,
+					к которому добавляется.
+					К этому псевдоэлементу могут применяться только
+					стилевые свойства,
+					связанные со свойствами шрифта, полями, отступами,
+					границами, цветом и фоном.
+				</div>
+				<div class="beforeafter">Псевдоэлементы ::before ::after</div>
+				<div class="zagolovok">Заголовок</div>
+				<ul class="list">
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+				</ul>
+				<ol class="numlist">
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+					<li>Я пункт списка</li>
+				</ol>
+				<div class="dop_block">
+					<div class="icon_text">OUR PROMISE TO YOU</div>
+					<div class="title_text">Sed perspiciatis omnis iste natus</div>
+					<div class="container">
+						<div class="blockimgtext">
+							<div class="imgtext">24/7 Love & Care</div>
+							<div class="textcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+								praesentium corrupti quos dolores et quas.</div>
+						</div>
+						<div class="blockimgtext2">
+							<div class="imgtext2">On-site Veterinarian</div>
+							<div class="textcontent">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+								non numquam eius modi tempora incidunt.</div>
+						</div>
+						<div class="blockimgtext3">
+							<div class="imgtext3">Live-stream Cameras</div>
+							<div class="textcontent">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+								nihil molestiae consequatur illum.</div>
+						</div>
+					</div>
+				</div>
+				<div class="dop_block2">
+					<div class="title_block">Choose how often</div>
+					<div class="text_block">Our team of chefs do the prep work - no more chopping, measuring, or sink full of
+						dishes!</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<a href="#top" class="up">Вверх</a>
+
+		</footer>
+	</div>
+</body>
+
+</html>
